@@ -92,12 +92,25 @@ alias esz='emacs .zshrc'
 alias soz='source .zshrc'
 alias rc='.zshrc'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias c.='cs ..'
+alias c..='cs ../..'
+alias c...='cs ../../..'
+
 alias ctpro='cd && cd c_lang/tprogress/'
 alias chome='cd && cd /cygdrive/c/Users/15t269/Documents/'
 alias cclan='cd && cd /cygdrive/c/Users/15t269/Documents/SLP/C_lang/'
 alias cprog='cd  && cd /cygdrive/c/Users/15t269/Documents/programming/2016/'
+alias cdotf='cd && cd dotfiles/'
+
 alias cctpro='cd && cs c_lang/tprogress/'
 alias cchome='cd && cs /cygdrive/c/Users/15t269/Documents/'
 alias ccclan='cd && cs /cygdrive/c/Users/15t269/Documents/SLP/C_lang/'
 alias ccprog='cd  && cs /cygdrive/c/Users/15t269/Documents/programming/2016/'
-alias sshpo='ssh -D 1080 -l miyaryo poulenc.eng.kagawa-u.ac.jp'
+
+##alias sshpo='ssh -D 1080 -l {USER} poulenc.eng.kagawa-u.ac.jp'
+sshpo () {
+\ssh -D 1080 -l "$@" poulenc.eng.kagawa-u.ac.jp
+}
