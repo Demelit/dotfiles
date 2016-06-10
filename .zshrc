@@ -114,3 +114,8 @@ alias ccprog='cd  && cs /cygdrive/c/Users/15t269/Documents/programming/2016/'
 sshpo () {
 \ssh -D 1080 -l "$@" poulenc.eng.kagawa-u.ac.jp
 }
+
+##alias sshpo='ssh -l {USER} boulez2'
+sshbo2 () {
+\ssh -l "$@" boulez2
+}
