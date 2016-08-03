@@ -91,6 +91,8 @@ alias es='emacs'
 alias esz='emacs .zshrc'
 alias soz='source .zshrc'
 alias rc='.zshrc'
+alias utf='chcp 65001'
+alias sjis='chcp 932'
 
 alias ..='cd ..'
 alias ...='cd ../..'
