@@ -80,17 +80,28 @@ cs () {
 \cd "$@" && ls
 }
 
+# alias for fg %{}
+alias jb='jobs'
+
+jj () {
+\jj %"$@" 
+}
+
 # alias conf
 
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
+alias la1='ls -1'
+alias la1='ls -a1'
+alias l1a='ls -1a'
 
 alias gs='git status'
 alias es='emacs'
 alias esz='emacs .zshrc'
 alias soz='source .zshrc'
 alias rc='.zshrc'
+
 alias utf='chcp 65001'
 alias sjis='chcp 932'
 
@@ -103,21 +114,24 @@ alias c...='cs ../../..'
 
 alias ctpro='cd && cd c_lang/tprogress/'
 alias chome='cd && cd /cygdrive/c/Users/15t269/Documents/'
+alias cengi='cd && cd /cygdrive/c/Users/15t269/Documents/EngineerSub'
 alias cclan='cd && cd /cygdrive/c/Users/15t269/Documents/SLP/C_lang/'
 alias cprog='cd  && cd /cygdrive/c/Users/15t269/Documents/programming/2016/'
 alias cdotf='cd && cd dotfiles/'
 
 alias cctpro='cd && cs c_lang/tprogress/'
 alias cchome='cd && cs /cygdrive/c/Users/15t269/Documents/'
+alias ccengi='cd && cs /cygdrive/c/Users/15t269/Documents/EngineerSub'
 alias ccclan='cd && cs /cygdrive/c/Users/15t269/Documents/SLP/C_lang/'
 alias ccprog='cd  && cs /cygdrive/c/Users/15t269/Documents/programming/2016/'
 
 ##alias sshpo='ssh -D 1080 -l {USER} poulenc.eng.kagawa-u.ac.jp'
-sshpo () {
-\ssh -D 1080 -l "$@" poulenc.eng.kagawa-u.ac.jp
+sshch0 () {
+   ## \ssh -D 1080 -l "$@" poulenc.eng.kagawa-u.ac.jp
+    \ssh -l "$@" chausson0.eng.kagawa-u.ac.jp
 }
 
 ##alias sshpo='ssh -l {USER} boulez2'
-sshbo2 () {
-\ssh -l "$@" boulez2
+sshgin () {
+\ssh -l "$@" gin
 }
